@@ -2,13 +2,9 @@ package com.grazielle_anaia.agendatarefas.infrastructure.security;
 
 import com.grazielle_anaia.agendatarefas.business.dto.UsuarioDTO;
 import com.grazielle_anaia.agendatarefas.infrastructure.client.UsuarioClient;
-import com.grazielleanaia.usuario2.infrastructure.entity.Usuario;
-import com.grazielleanaia.usuario2.infrastructure.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
