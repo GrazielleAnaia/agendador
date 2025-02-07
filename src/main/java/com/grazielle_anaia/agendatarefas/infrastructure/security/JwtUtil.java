@@ -30,7 +30,6 @@ public class JwtUtil {
     public String extractUsername(String token) {
         // Obtém o assunto (nome de usuário) das claims do token
         return extractClaims(token).getSubject();
-
     }
 
     // Verifica se o token JWT está expirado
@@ -45,6 +44,5 @@ public class JwtUtil {
         final String extractedUsername = extractUsername(token);
         // Verifica se o nome de usuário do token corresponde ao fornecido e se o token não está expirado
         return (extractedUsername.equals(username) && !isTokenExpired(token));
-
     }
 }
